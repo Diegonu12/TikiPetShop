@@ -560,3 +560,49 @@ h2 a:hover {
 .whatsapp-float:hover img {
   transform: scale(1.1);
 }
+
+
+@media (max-width: 768px) {
+  .seccion-imagenes a {
+    flex: 1 1 100%;
+  }
+
+  .seccion-imagenes img {
+    height: auto;
+    max-width: 100%;
+  }
+
+  .hero-texto h1 {
+    font-size: 2rem;
+  }
+
+  .hero-texto p {
+    font-size: 1rem;
+  }
+}
+
+.productos-destacados h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.contenedor-productos {
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.productos-scroll {
+  width: 100%;
+  padding: 10px 0;
+  gap: 10px;
+}
+
+.producto {
+  flex: 0 0 80%;
+  max-width: 300px;
+}
+
+.flecha {
+  display: none; /* oculta flechas en móvil */
+}
