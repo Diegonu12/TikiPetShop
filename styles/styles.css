@@ -57,6 +57,18 @@ body {
   display: none;
 }
 
+.menu-toggle:checked ~ .nav-list {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 70px;
+  right: 30px;
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 15px;
+  border-radius: 10px;
+  z-index: 999;
+}
+
 .menu-icono {
   display: flex;
   flex-direction: column;
