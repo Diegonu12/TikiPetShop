@@ -606,3 +606,30 @@ h2 a:hover {
 .flecha {
   display: none; /* oculta flechas en móvil */
 }
+
+@media (max-width: 768px) {
+  .producto {
+    flex: 0 0 90%;
+    margin: 0 auto;
+  }
+
+  .productos-scroll {
+    padding: 0 10px;
+    gap: 15px;
+    scroll-snap-type: x mandatory;
+  }
+
+  .productos-scroll .producto {
+    scroll-snap-align: center;
+  }
+
+  .contenedor-productos {
+    flex-direction: column;
+    align-items: stretch;
+    overflow-x: hidden;
+  }
+
+  .flecha {
+    display: none;
+  }
+}
