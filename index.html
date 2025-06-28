@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TikiPetShop | Inicio</title>
+  <link rel="stylesheet" href="../styles/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!----------- Bootstrap 5 ------------>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--------------------------------------------HEADER---------------------------------------------------->
+  <header>
+  <div class="hero">
+    <video autoplay muted loop playsinline class="video-fondo">
+      <source src="assets/video3.mp4" type="video/mp4" />
+    </video>
+
+    <img src="../assets/LogoTikiPetShop.png" alt="Logo TikiPetShop" class="logo-header"/>
+
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-icono">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <ul class="nav-list">
+      <li><a href="#">Inicio</a></li>
+      <li><a href="pages/productos.html">Productos</a></li>
+      <li><a href="pages/servicios.html">Servicios</a></li>
+      <li><a href="pages/sobrenosotros.html">Sobre Nosotros</a></li>
+      <li><a href="pages/contacto.html">Contacto</a></li>
+    </ul>
+
+    <div class="hero-texto">
+      <h1>Bienvenidos a TikiPetShop</h1>
+      <p>Todo para tu mascota, con amor y cuidado.</p>
+    </div>
+    </div>
+</header>
+
+
+<!-------------------------------------SECCION DE PRODUCTOS/SERVICIOS/OFERTA-------------------------------------------->
+  <main>
+    <section class="seccion-imagenes">
+  <a href="pages/productos.html">
+    <h2>Productos</h2>
+    <img src="assets/imagen100.png" alt="Productos">
+  </a>
+  <a href="pages/servicios.html">
+    <h2>Servicios</h2>
+    <img src="assets/imagen55.png" alt="Servicios">
+  </a>
+  <a href="pages/ofertas.html">
+    <h2>Ofertas</h2>
+    <img src="assets/imagen22.png" alt="Ofertas">
+  </a>
+</section>
+
+
+
+<!-------------------------------------SECCION DE CATEGORIAS-------------------------------------------->
+<section class="categorias">
+  <h2 class="titulo-categorias">Categorías</h2>
+
+  <div class="grupo-categorias">
+    <h3 class="subtitulo-categoria">🐾 Mascotas</h3>
+    <div class="lista-categorias">
+      <div class="categoria-item">Perros</div>
+      <div class="categoria-item">Gatos</div>
+      <div class="categoria-item">Conejos</div>
+    </div>
+  </div>
+
+  <div class="grupo-categorias">
+    <h3 class="subtitulo-categoria">🐶 Etapas</h3>
+    <div class="lista-categorias">
+      <div class="categoria-item">Adultos</div>
+      <div class="categoria-item">Cachorros</div>
+    </div>
+  </div>
+</section>
+
+
+<!-------------------------------------SECCION DE PRODUCTOS DESTACADOS-------------------------------------------->
+<section class="productos-destacados">
+  <h2>Productos Destacados</h2>
+  <div class="contenedor-productos">
+    <span class="flecha izquierda">&#9664;</span>
+    <div class="productos-scroll">
+      <div class="producto">
+        <img src="assets/ComidaDePerro.png" alt="Producto 1">
+        <p class="nombre">Comida para Perros</p>
+        <p class="precio">$850</p>
+        <button class="btn btn-warning w-100 fw-bold">Agregar al Carrito</button>
+      </div>
+      <div class="producto">
+        <img src="assets/JugueteMordedor.png" alt="Producto 2">
+        <p class="nombre">Juguete Mordedor</p>
+        <p class="precio">$320</p>
+        <button class="btn btn-warning w-100 fw-bold">Agregar al Carrito</button>
+      </div>
+      <div class="producto">
+        <img src="assets/CepilloParaGatos.png" alt="Producto 3">
+        <p class="nombre">Cepillo para Gatos</p>
+        <p class="precio">$490</p>
+        <button class="btn btn-warning w-100 fw-bold">Agregar al Carrito</button>
+      </div>
+      <div class="producto">
+        <img src="assets/CollarAntipulgas.png" alt="Producto 4">
+        <p class="nombre">Collar Antipulgas</p>
+        <p class="precio">$690</p>
+        <button class="btn btn-warning w-100 fw-bold">Agregar al Carrito</button>
+      </div>
+      <div class="producto">
+        <img src="assets/PelotaDeGoma.png" alt="Producto 5">
+        <p class="nombre">Pelota de Goma</p>
+        <p class="precio">$180</p>
+        <button class="btn btn-warning w-100 fw-bold">Agregar al Carrito</button>
+      </div>
+      <div class="producto">
+        <img src="assets/RascadorGato.png" alt="Producto 6">
+        <p class="nombre">Rascador Gato</p>
+        <p class="precio">$1.200</p>
+        <button class="btn btn-warning w-100 fw-bold">Agregar al Carrito</button>
+      </div>
+    </div>
+    <span class="flecha derecha">&#9654;</span>
+  </div>
+</section>
+
+
+
+<!-------------------------------------SECCION DE SERVICIOS-------------------------------------------->
+<section class="info-servicios">
+  <div class="info-item">
+    <img src="assets/Tarjetas.png" alt="Pago seguro" class="info-icon" />
+    <h3>Paga online y con seguridad</h3>
+    <p>Sin moverte de tu casa.</p>
+  </div>
+  <div class="info-item">
+    <img src="assets/Camionsito.png" alt="Envíos gratis" class="info-icon" />
+    <h3>Envíos sin costo a todo el pais</h3>
+    <p>Aprovecha este beneficio</p>
+  </div>
+  <div class="info-item">
+    <img src="assets/audifonos.png" alt="Atención al cliente" class="info-icon" />
+    <h3>Atención al cliente</h3>
+    <p>Lunes a Viernes de 10 a 19 hs.<br>Sábado de 10 a 14 hs.</p>
+  </div>
+</section>
+
+  </main>
+
+
+<!-------------------------------------------FOOTER--------------------------------------------------->
+   <footer class="footer">
+  <div class="footer-col">
+    <img src="../assets/LogoTikiPetShop.png" alt="Logo" class="logosinfondo-footer"/>
+  </div>
+
+  <div class="footer-col">
+    <p><strong class="footer-titulo">Nosotros:</strong><br>
+    Preguntas Frecuentes<br>
+    Nuestra Empresa<br>
+    Contacto</p>
+  </div>
+
+  <div class="footer-col">
+    <p><strong class="footer-titulo">Locales:</strong><br>
+    Ciudadela 1174 entre Canelones y Maldonado<br>
+    Magallanes 1754 esq. La Paz<br></p>
+    <p>Tel: 098 186 602</p>
+  </div>
+
+  <div class="footer-col">
+    <p><strong class="footer-titulo">Seguinos:</strong><br>
+      <img src="assets/instagram-icon.png.png" alt="Instagram" class="icono-red" /> Instagram<br>
+      <img src="assets/facebook-icon.png.png" alt="Facebook" class="icono-red" /> Facebook<br>
+      <img src="assets/logoTikTok.png" alt="TikTok" class="icono-red" /> TikTok<br>
+    </p>
+  </div>
+
+  <div class="footer-col">
+    <form action="#">
+      <label for="registro" class="footer-titulo">Suscribite a nuestro newsletter</label><br>
+      <input type="email" id="registro" placeholder="Tu email" />
+    </form>
+  </div>
+
+  <div class="whatsapp-logo-solo">
+  <a href="https://wa.me/59898186602" class="whatsapp-float" target="_blank">
+    <img src="assets/wpp.png" alt="WhatsApp" class="icono-whatsapp-solo" />
+  </a>
+</div>
+
+  <div class="footer-copy">
+    <p>© 2025 TikiPetShop. Todos los derechos reservados.</p>
+  </div>
+
+</footer>
+
+  
+
+</body>
+</html>

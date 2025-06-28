@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TikiPage | Contacto</title>
+  <link rel="stylesheet" href="../styles/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <div class="hero">
+      <img src="../assets/LogoTikiPetShop.png" alt="Logo TikiPetShop" class="logo-header"/>
+
+      <nav>
+        <ul class="nav-list">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="pages/productos.html">Productos</a></li>
+          <li><a href="pages/servicios.html">Servicios</a></li>
+          <li><a href="pages/sobrenosotros.html">Sobre Nosotros</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="hero-texto">
+        <h1>Bienvenidos a TikiPetShop</h1>
+        <p>Todo para tu mascota, con amor y cuidado.</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="info-contacto">
+      <ul>
+        <li><strong>Dirección:</strong> Montevideo - Centro 1754</li>
+        <li><strong>Contacto:</strong> 098 186 602 · info@tikipetshop.com.uy</li>
+        <li><strong>Horarios:</strong><br>
+          Lunes a viernes: 9 a 20hs<br>
+          Sábados: 10 a 20hs<br>
+          Domingos: 10 a 18hs
+        </li>
+      </ul>
+    </section>
+
+    <section class="contacto">
+      <h3>Dejanos tu consulta</h3>
+      <form action="#">
+        <label for="nombre">Nombre y Apellido</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" name="telefono">
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-col">
+      <img src="../assets/LogoTikiPetShop.png" alt="Logo" class="logosinfondo-footer"/>
+    </div>
+    <div class="footer-col">
+      <p><strong>Atención al cliente:</strong><br>
+      Lunes a viernes de 9 a 20hs<br>
+      Sábados de 10 a 20hs<br>
+      Domingos de 10 a 18hs</p>
+      <p>info@tikipetshop.com.uy | 098 186 602</p>
+    </div>
+    <div class="footer-col">
+      <form action="#">
+        <label for="registro">Suscribite</label><br>
+        <input type="email" id="registro" placeholder="Tu email" />
+      </form>
+      <p>Seguinos en: Facebook · Instagram · LinkedIn</p>
+    </div>
+    <div class="footer-copy">
+      <p>© 2025 TikiPetShop. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
