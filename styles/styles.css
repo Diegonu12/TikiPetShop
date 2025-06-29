@@ -6,18 +6,14 @@
 }
 
 :root{
-  --color-principal: #cd945b;
-  --color-secundario: #d38130;
-  --color-texto: #151414;
-  --color-hover: #ffcc00;
-  --color-footer: #333;
-  --color-categorias: #f8caa4;
-  --color-categorias-hover: #ffcc80;
-  --color-producto-bg: #f6f5f1;
+  --color-principal: #cd945b; /* se usa */
+  --color-texto: #151414; /* se usa */
+  --color-hover: #ffcc00; /* se usa */
+  --color-producto-bg: #f6f5f1; /* se usa */
 }
 
 body {
-  font-family: 'Sour Gummy', sans-serif;
+  font-family: 'Sour Gummy', sans-serif !important;
   line-height: 1.6;
   background-color: var(--color-principal);
   color: var(--color-texto);
@@ -52,21 +48,10 @@ body {
 
 
 
-/*---------------Menu Hamburguesa--------------*/
+/* ---------------- Menú Hamburguesa ------------------ */
+
 .menu-toggle {
   display: none;
-}
-
-.menu-toggle:checked ~ .nav-list {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 70px;
-  right: 30px;
-  background-color: rgba(0, 0, 0, 0.85);
-  padding: 15px;
-  border-radius: 10px;
-  z-index: 999;
 }
 
 .menu-icono {
@@ -74,45 +59,63 @@ body {
   flex-direction: column;
   cursor: pointer;
   position: absolute;
-  top: 25px;
-  right: 30px;
+  top: 20px;
+  right: 20px;
   z-index: 1001;
 }
 
 .menu-icono span {
   height: 3px;
   width: 25px;
-  background: white;
+  background-color: var(--color-producto-bg);
   margin: 4px 0;
-  border-radius: 5px;
-  transition: 0.3s;
+  border-radius: 3px;
+  transition: all 0.3s ease;
 }
 
-/* Oculta el menú por defecto en móviles */
+/* Ocultar menú por defecto */
 .nav-list {
   display: none;
   flex-direction: column;
+  align-items: flex-start;
   position: absolute;
-  top: 70px;
-  right: 30px;
+  top: 65px;
+  right: 20px;
   background-color: rgba(0, 0, 0, 0.9);
-  padding: 15px;
+  padding: 15px 25px;
   border-radius: 10px;
   z-index: 1000;
 }
 
-/* Cuando se cliquea el menú, se muestra */
-.menu-toggle:checked + .menu-icono + .nav-list {
+/* Mostrar menú cuando se hace click en el toggle */
+.menu-toggle:checked ~ .menu-icono + .nav-list {
   display: flex;
 }
 
-/* Versión escritorio | media query */
+/* Estilos de los enlaces del menú */
+.nav-list li {
+  margin-bottom: 10px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: var(--color-producto-bg);
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-list a:hover {
+  color: #ffcc00;
+}
+
+/* Estilo para escritorio */
 @media (min-width: 768px) {
   .menu-icono {
     display: none;
   }
 
-   .nav-list {
+  .nav-list {
     display: flex !important;
     position: static;
     flex-direction: row;
@@ -120,10 +123,19 @@ body {
     padding: 0;
   }
 
-   .nav-list li {
+  .nav-list li {
     margin: 0 15px;
   }
+
+  .nav-list a {
+    color: white;
+  }
+
+  .nav-list a:hover {
+    color: #ffcc00;
+  }
 }
+
 
 
 .logo-header {
