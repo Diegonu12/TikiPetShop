@@ -714,7 +714,10 @@ h2 a:hover {
 
 .hero-productos {
   min-height: 100vh;
-  background: linear-gradient(135deg, #e0b37f, #e2c25f);
+  background-color: #ee9658;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   padding: 60px 20px;
 }
 
