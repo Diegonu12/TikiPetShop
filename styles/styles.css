@@ -88,7 +88,7 @@ body {
 }
 
 /* Mostrar menú cuando se hace click en el toggle */
-.menu-toggle:checked ~ .menu-icono + .nav-list {
+.menu-toggle:checked ~ .nav-list {
   display: flex;
 }
 
