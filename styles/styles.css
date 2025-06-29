@@ -85,7 +85,10 @@ body {
   padding: 15px;
   border-radius: 10px;
   z-index: 999;
+  list-style: none;
+  margin: 0;
 }
+
 
 /* Mostrar menú cuando se hace click en el toggle */
 .menu-toggle:checked ~ .nav-list {
