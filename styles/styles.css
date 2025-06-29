@@ -79,12 +79,12 @@ body {
   flex-direction: column;
   align-items: flex-start;
   position: absolute;
-  top: 65px;
-  right: 20px;
+  top: 70px;
+  right: 30px;
   background-color: rgba(0, 0, 0, 0.9);
-  padding: 15px 25px;
+  padding: 15px;
   border-radius: 10px;
-  z-index: 1000;
+  z-index: 999;
 }
 
 /* Mostrar menú cuando se hace click en el toggle */
