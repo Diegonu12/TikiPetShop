@@ -143,6 +143,8 @@ body {
   margin-bottom: 40px;
 }
 
+/*(pisa el comportamiento hamburguesa) */
+/*
 .nav-list {
   list-style: none;
   display: flex;
@@ -150,6 +152,7 @@ body {
   gap: 20px;
   margin-bottom: 20px;
 }
+*/
 
 .nav-list a {
   text-decoration: none;
