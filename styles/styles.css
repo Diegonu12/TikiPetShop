@@ -684,3 +684,49 @@ h2 a:hover {
     text-align: center;
   }
 }
+
+/*------------------------------------------Pages Produtos--------------------------------------------------*/
+
+.productos-pagina {
+  background-color: #f6f5f1;
+  padding-bottom: 60px;
+}
+
+.productos-header h2 {
+  font-size: 2.5rem;
+  color: #3e1f0e;
+  margin-bottom: 10px;
+}
+
+.productos-header p {
+  font-size: 1.2rem;
+  color: #914b05;
+}
+
+.card h5 {
+  color: #3e1f0e;
+}
+
+.card-text {
+  color: #914b05;
+  font-weight: bold;
+}
+
+.hero-productos {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e0b37f, #e2c25f);
+  padding: 60px 20px;
+}
+
+.hero-productos .btn {
+  min-width: 180px;
+  transition: all 0.3s ease;
+  border: 2px solid #fff;
+  font-weight: bold;
+}
+
+.hero-productos .btn:hover {
+  background-color: #ffffff;
+  color: #f57c00;
+  transform: scale(1.05);
+}
