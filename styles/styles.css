@@ -75,6 +75,7 @@ body {
 
 /* Ocultar menú por defecto */
 .nav-list {
+  list-style: none;
   display: none;
   flex-direction: column;
   align-items: flex-start;
@@ -85,7 +86,7 @@ body {
   padding: 15px;
   border-radius: 10px;
   z-index: 999;
-  list-style: none;
+  padding: 0;
   margin: 0;
 }
 
