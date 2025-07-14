@@ -536,11 +536,11 @@ main h2 {
   transform: scale(1.1);
 }
 
-/*------------------------------Preguntas Frecuentes-------------------------*/
+/*------------------ PREGUNTAS FRECUENTES ------------------*/
 
 body {
   font-family: 'Sour Gummy', sans-serif;
-  background-image: url('../assets/tiki1.png.png'); /* <- asegurate que la ruta sea correcta */
+  background-image: url('../assets/tiki1.png.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -551,10 +551,15 @@ body {
 }
 
 .faq-container {
-  max-width: 800px;
-  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  max-width: 100%;
+  padding: 40px 20px;
   margin: 100px auto 50px auto;
-  padding: 20px;
+
   background-color: rgba(255, 245, 225, 0.2);
   border-radius: 10px;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
@@ -571,6 +576,7 @@ body {
 .faq {
   display: flex;
   flex-direction: column;
+  align-items: center; 
   gap: 10px;
 }
 
@@ -583,6 +589,8 @@ body {
   transition: background-color 0.3s ease;
   color: #2c1f0f;
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
+  width: 100%; 
+  max-width: 600px;
 }
 
 .faq details:hover {
@@ -592,14 +600,14 @@ body {
 .faq summary {
   font-weight: bold;
   font-size: 1.1rem;
-  color: #c2884e;
+  color: #120a03;
   background-color: transparent;
   list-style: none;
   cursor: pointer;
 }
 
 .faq details[open] summary {
-  color: #a1662b;
+  color: #1c130b;
 }
 
 .faq p {
@@ -607,6 +615,11 @@ body {
   font-size: 1rem;
   line-height: 1.4;
 }
+
+
+
+
+
 
 /* ------------------- RESPONSIVE ------------------- */
 @media (max-width: 768px) {
@@ -627,6 +640,7 @@ body {
     font-size: 0.95rem;
   }
 }
+
 
 /*-------------logos redes sociales------------*/
 
@@ -854,7 +868,7 @@ body, html {
 body {
   margin: 0;
   padding: 0;
-  background-color: #2d2d2d; /* color del fondo general para probar */
+  background-color: #2d2d2d; 
 }
 
 main {
@@ -912,151 +926,8 @@ header {
 
 /*-----------------SobreNosotros Pagina---------------------------*/
 
-/* Frases destacadas */
-.frases-nosotros {
-  text-align: center;
-  font-size: 1.6rem;
-  font-weight: bold;
-  color: #3e2b16;
-  background-color: #fdf3e7;
-  padding: 30px 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  text-shadow: 1px 1px 1px #fff;
-}
-
-/* Sección historia */
-.historia {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-  padding: 60px 40px;
-  background-color: #fff6e5;
-  flex-wrap: wrap;
-}
-
-.texto-historia {
-  flex: 1;
-  max-width: 500px;
-}
-
-.texto-historia h2 {
-  font-size: 2rem;
-  margin-bottom: 15px;
-  color: #6a4c2b;
-}
-
-.texto-historia p {
-  font-size: 1.1rem;
-  margin-bottom: 10px;
-  color: #0f0c08;
-  font-weight: bold;
-  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.541);
-}
-
-.img-historia {
-  flex: 1;
-  max-width: 400px;
-  text-align: center;
-}
-
-.img-historia img {
-  width: 100%;
-  max-width: 350px;
-  border-radius: 20px;
-  box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
-}
-
-/* Galería */
-.galeria {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-  padding: 50px 40px;
-  background-color: #faeedb;
-}
-
-.galeria-item img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
-}
-
-/* Misión y valores */
-.mision {
-  background-color: #fff6e5;
-  padding: 60px 40px;
-  text-align: center;
-}
-
-.mision h2 {
-  font-size: 2rem;
-  margin-bottom: 25px;
-  color: #6a4c2b;
-}
-
-.mision ul {
-  list-style: none;
-  padding: 0;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.mision li {
-  font-size: 1.1rem;
-  margin-bottom: 15px;
-  position: relative;
-  padding-left: 30px;
-  color: #4a3a24;
-}
-
-.mision li::before {
-  content: "🐾";
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-
-/* Responsive ajustes */
-@media (max-width: 768px) {
-  .historia {
-    flex-direction: column;
-    padding: 40px 20px;
-  }
-
-  .galeria {
-    padding: 30px 20px;
-  }
-
-  .mision {
-    padding: 40px 20px;
-  }
-
-  .frases-nosotros {
-    padding: 20px 15px;
-    font-size: 1.3rem;
-  }
-}
-body {
-  overflow-x: hidden;
-}
-
-.info-servicios {
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 40px auto;
-  gap: 20px;
-}
-
-.info-item {
-  flex: 1 1 280px;
-  max-width: 350px;
-}
 body.sobrenosotros {
-  background-color: #4e3524; /* Fondo marrón oscuro */
+  background-color: #4e3524;
   color: #fff3e6;
 }
 
@@ -1109,7 +980,6 @@ body.sobrenosotros {
     height: auto;
   }
 }
-
 /* ------------------ CONTACTO ------------------ */
 .contacto-section {
   display: flex;
@@ -1174,3 +1044,12 @@ body.sobrenosotros {
   background-color: var(--color-hover);
 }
 
+.productos-destacados {
+  margin-bottom: 0;
+}
+
+.info-servicios {
+  margin-top: 0;
+  background: none; 
+  padding-top: 20px; 
+}
