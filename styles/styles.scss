@@ -1,4 +1,31 @@
-@charset "UTF-8";
+// -------------------- VARIABLES --------------------
+$color-principal: #c2884e;
+$color-texto: #0a0802;
+$color-hover: #ffcc00;
+$color-bg-producto: #f6f5f1;
+$color-footer-bg: #333;
+$color-footer-texto: white;
+$fuente-principal: 'Sour Gummy', sans-serif;
+
+// -------------------- MIXINS --------------------
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin responsive-padding {
+  padding: 40px 20px;
+
+  @media (max-width: 768px) {
+    padding: 20px 10px;
+  }
+}
+
+@mixin bordes-redondeados($radio: 12px) {
+  border-radius: $radio;
+}
+
 /* ------------------------- RESET & VARIABLES -------------------------- */
 * {
   margin: 0;
@@ -15,13 +42,12 @@
 
 /* ----------------------------- BODY ----------------------------- */
 body {
-  font-family: "Sour Gummy", sans-serif;
+  font-family: $fuente-principal;
   line-height: 1.6;
-  background-color: #c2884e;
-  color: #0a0802;
+  background-color: $color-principal;
+  color: $color-texto;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
-
 .main-index {
   background-color: #d28808;
 }
@@ -29,9 +55,7 @@ body {
 /* ------------------------- HEADER GENERAL -------------------------- */
 .hero,
 .hero-pagina {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-center;
   flex-direction: column;
   background-size: cover;
   background-position: center;
@@ -46,7 +70,7 @@ body {
 }
 
 .hero-pagina {
-  background-image: url("../assets/tiki1.png.png");
+  background-image: url('../assets/tiki1.png.png');
 }
 
 .logo-header {
@@ -139,6 +163,7 @@ body {
   .menu-icono {
     display: none;
   }
+
   .nav-list {
     display: flex !important;
     position: static;
@@ -146,10 +171,12 @@ body {
     background: none;
     padding: 0;
   }
+
   .nav-list li {
     margin: 0 15px;
   }
 }
+
 /* ------------------------ HERO TEXTOS -------------------------- */
 .hero-texto h1 {
   font-size: 3rem;
@@ -166,17 +193,10 @@ main h2 {
 }
 
 .seccion-imagenes {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-center;
   gap: 20px;
   flex-wrap: wrap;
-  padding: 40px 20px;
-}
-@media (max-width: 768px) {
-  .seccion-imagenes {
-    padding: 20px 10px;
-  }
+  @include responsive-padding;
 }
 
 .seccion-imagenes a {
@@ -302,7 +322,7 @@ main h2 {
   flex: 0 0 300px;
   background-color: var(--color-producto-bg);
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
   padding: 15px;
   text-align: center;
 }
@@ -349,21 +369,26 @@ main h2 {
   .producto {
     flex: 0 0 90%;
   }
+
   .productos-scroll {
     padding: 0 10px;
     scroll-snap-type: x mandatory;
   }
+
   .productos-scroll .producto {
     scroll-snap-align: center;
   }
+
   .contenedor-productos {
     flex-direction: column;
     align-items: stretch;
   }
+
   .flecha {
     display: none;
   }
 }
+
 /* ------------------------- INFO-SERVICIOS -------------------------- */
 .info-servicios {
   display: flex;
@@ -515,6 +540,7 @@ main h2 {
 }
 
 /*---------------------------- Logo Whatsapp-------------------------------*/
+
 .whatsapp-float {
   position: fixed;
   bottom: 20px;
@@ -536,9 +562,10 @@ main h2 {
 }
 
 /*------------------ PREGUNTAS FRECUENTES ------------------*/
+
 body {
-  font-family: "Sour Gummy", sans-serif;
-  background-image: url("../assets/tiki1.png.png");
+  font-family: 'Sour Gummy', sans-serif;
+  background-image: url('../assets/tiki1.png.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -553,9 +580,11 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
   max-width: 100%;
   padding: 40px 20px;
   margin: 100px auto 50px auto;
+
   background-color: rgba(255, 245, 225, 0.2);
   border-radius: 10px;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
@@ -572,7 +601,7 @@ body {
 .faq {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; 
   gap: 10px;
 }
 
@@ -585,7 +614,7 @@ body {
   transition: background-color 0.3s ease;
   color: #2c1f0f;
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
-  width: 100%;
+  width: 100%; 
   max-width: 600px;
 }
 
@@ -612,23 +641,30 @@ body {
   line-height: 1.4;
 }
 
+
 /* ------------------- RESPONSIVE ------------------- */
 @media (max-width: 768px) {
   .faq-container {
     margin: 60px auto 30px;
     padding: 15px;
   }
+
   .faq-titulo {
     font-size: 1.8rem;
   }
+
   .faq summary {
     font-size: 1rem;
   }
+
   .faq p {
     font-size: 0.95rem;
   }
 }
+
+
 /*-------------logos redes sociales------------*/
+
 .redes-sociales {
   list-style: none;
   padding: 0;
@@ -663,16 +699,19 @@ body {
     display: block;
     margin: 0 auto 20px;
   }
+
   .footer {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
+
   .footer-col {
     margin-bottom: 20px;
     text-align: center;
   }
 }
+
 .nav-list a.activo {
   color: yellow;
   font-weight: bold;
@@ -680,6 +719,7 @@ body {
 }
 
 /*-------------------------pagina servicios-------------------------------*/
+
 .servicios-main {
   padding: 40px 20px;
   background-color: #fdf7ee;
@@ -690,7 +730,7 @@ body {
   margin: 0 auto 40px;
   max-width: 90%;
   border-radius: 12px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 20px rgba(0,0,0,0.15);
 }
 
 .tarjetas-servicios {
@@ -702,10 +742,10 @@ body {
 
 .servicio-card {
   background-color: #fde8c8;
-  border-radius: 16px;
+  @include bordes-redondeados(16px);
   text-align: center;
   padding: 25px 15px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
   transition: transform 0.3s ease;
 }
 
@@ -719,7 +759,7 @@ body {
 }
 
 .servicio-card h3 {
-  font-family: "Sour Gummy", sans-serif;
+  font-family: 'Sour Gummy', sans-serif;
   font-size: 1.4rem;
   color: #A45A1C;
   text-shadow: 1px 1px 2px #fff2d6;
@@ -746,7 +786,7 @@ body {
 }
 
 .extras-servicios h2 {
-  font-family: "Sour Gummy", sans-serif;
+  font-family: 'Sour Gummy', sans-serif;
   font-size: 2rem;
   margin-bottom: 25px;
   color: #A45A1C;
@@ -768,7 +808,7 @@ body {
 }
 
 .mapa-servicios {
-  background-color: #6e4b33;
+  background-color: #6e4b33; 
   padding-top: 80px;
   padding-bottom: 60px;
   width: 100vw;
@@ -781,11 +821,12 @@ body {
 }
 
 .mapa-servicios h2 {
-  font-family: "Sour Gummy", sans-serif;
+  font-family: 'Sour Gummy', sans-serif;
   font-size: 2rem;
   color: #ffc107;
   text-align: center;
-  margin: 0 0 30px 0;
+  margin: 0 0 30px 0;  
+  
   text-shadow: 1px 1px #000;
 }
 
@@ -799,13 +840,12 @@ body {
   border-radius: 10px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
-
 .titulo-mapa {
-  font-family: "Sour Gummy", sans-serif;
+  font-family: 'Sour Gummy', sans-serif;
   font-size: 2rem;
   color: #ffc107;
   text-align: center;
-  padding-top: 30px;
+  padding-top: 30px; 
   margin-bottom: 30px;
   text-shadow: 1px 1px #000;
 }
@@ -818,7 +858,6 @@ body {
   overflow: hidden;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
-
 main {
   margin: 0;
   padding: 0;
@@ -850,7 +889,7 @@ body, html {
 body {
   margin: 0;
   padding: 0;
-  background-color: #2d2d2d;
+  background-color: #2d2d2d; 
 }
 
 main {
@@ -905,7 +944,9 @@ header {
     max-height: 70vh;
   }
 }
+
 /*-----------------SobreNosotros Pagina---------------------------*/
+
 body.sobrenosotros {
   background-color: #4e3524;
   color: #fff3e6;
@@ -926,7 +967,7 @@ body.sobrenosotros {
   background-color: rgba(255, 255, 255, 0.05);
   padding: 30px;
   border-radius: 12px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
 }
 
 .bloque-historia img {
@@ -954,6 +995,7 @@ body.sobrenosotros {
     flex-direction: column;
     text-align: center;
   }
+
   .bloque-historia img {
     width: 100%;
     height: auto;
@@ -966,7 +1008,7 @@ body.sobrenosotros {
   align-items: center;
   min-height: 100vh;
   padding: 40px 20px;
-  background-image: url("../assets/perro-header-producto-HD.png");
+  background-image: url('../assets/perro-header-producto-HD.png');
   background-size: cover;
   background-position: center;
 }
@@ -1029,8 +1071,6 @@ body.sobrenosotros {
 
 .info-servicios {
   margin-top: 0;
-  background: none;
-  padding-top: 20px;
+  background: none; 
+  padding-top: 20px; 
 }
-
-/*# sourceMappingURL=styles.css.map */
