@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TikiPetShop | Productos</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+  <link rel="stylesheet" href="../styles/productos.css">
+</head>
+
+
+<body>
+
+  <header class="hero-pagina">
+    <img src="../assets/LogoTikiPetShop.png" alt="Logo TikiPetShop" class="logo-header">
+    <nav class="navegacion">
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="menu-icono">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+       <ul class="nav-list">
+     <li><a href="../index.html">Inicio</a></li>
+     <li><a href="productos.html"class="activo">Productos</a></li>
+     <li><a href="servicios.html" >Servicios</a></li>
+     <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
+     <li><a href="contacto.html">Contacto</a></li>
+     </ul>
+    </nav>
+  </header>
+
+
+  <main class="main-productos">
+  <div class="layout-principal">
+    
+    <aside class="barra-lateral">
+      <div class="filtros">
+        <input type="text" class="buscador-productos" placeholder="Buscar productos...">
+        
+        <div class="filtro-precio">
+          <h3>Filtrar por precio</h3>
+          <input type="range" min="100" max="1000" value="500">
+          <p>Rango: $100 - $1000</p>
+        </div>
+      </div>
+    </aside>
+
+    <section class="productos-container">
+      <!-- Fila 1 -->
+      <div class="producto">
+        <img src="../assets/PelotaDeGoma.png" alt="Pelota">
+        <h6>Pelota de goma</h6>
+        <p>$390</p>
+        <button>Agregar al carrito</button>
+      </div>
+      <div class="producto">
+        <img src="../assets/JugueteMordedor.png" alt="Mordedor">
+        <h6>Mordedor dental</h6>
+        <p>$290</p>
+        <button>Agregar al carrito</button>
+      </div>
+      <div class="producto">
+        <img src="../assets/CollarAntipulgas.png" alt="Collar">
+        <h6>Collar antipulgas</h6>
+        <p>$1200</p>
+        <button>Agregar al carrito</button>
+      </div>
+
+      <!-- Fila 2 -->
+      <div class="producto">
+        <img src="../assets/CepilloParaGatos.png" alt="Cepillo">
+        <h6>Cepillo para Gato</h6>
+        <p>$450</p>
+        <button>Agregar al carrito</button>
+      </div>
+      <div class="producto">
+        <img src="../assets/BotellaPortatil.png" alt="Botella">
+        <h6>Botella Portatil</h6>
+        <p>$620</p>
+        <button>Agregar al carrito</button>
+      </div>
+      <div class="producto">
+        <img src="../assets/RascadorGato.png" alt="Rascador">
+        <h6>Rascador para Gato</h6>
+        <p>$350</p>
+        <button>Agregar al carrito</button>
+      </div>
+    </section>
+  </div>
+</main>
+
+
+<footer class="footer">
+    <div class="footer-col">
+      <img src="../assets/LogoTikiPetShop.png" alt="Logo sin fondo" class="logosinfondo-footer">
+    </div>
+
+    <div class="footer-col">
+      <h4 class="footer-titulo">Nosotros:</h4>
+      <ul class="footer-menu">
+        <li><a href="preguntas.html" class="footer-link">Preguntas Frecuentes</a></li>
+        <li><a href="sobrenosotros.html" class="footer-link">Nuestra Empresa</a></li>
+        <li><a href="contacto.html" class="footer-link">Contacto</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4 class="footer-titulo">Locales:</h4>
+      <p>Ciudadela 1114 entre Canelones y Maldonado<br>
+      Magallanes 1154 esq. La Paz<br><br>
+      Tel: 098 186 602</p>
+    </div>
+
+<div class="footer-col">
+  <h4 class="footer-titulo">Seguinos:</h4>
+  <ul class="redes-sociales">
+    <li>
+      <a href="https://www.instagram.com/tuperfil" target="_blank">
+        <img src="../assets/instagram-icon.png.png" class="icono-red" alt="Instagram">
+        Instagram
+      </a>
+    </li>
+    <li>
+      <a href="https://www.facebook.com/tuperfil" target="_blank">
+        <img src="../assets/facebook-icon.png.png" class="icono-red" alt="Facebook">
+        Facebook
+      </a>
+    </li>
+    <li>
+      <a href="https://www.tiktok.com/@tuperfil" target="_blank">
+        <img src="../assets/logoTikTok.png" class="icono-red" alt="TikTok">
+        TikTok
+      </a>
+    </li>
+  </ul>
+</div>
+
+    <div class="footer-col">
+      <h4 class="footer-titulo">Suscribite a nuestro newsletter</h4>
+      <input type="email" placeholder="Tu email">
+    </div>
+
+    <div class="footer-copy">© 2025 TikiPetShop. Todos los derechos reservados.</div>
+  </footer>
+
+  <img src="../assets/wpp.png" alt="WhatsApp" class="logo-wsp">
+</body>
+</html>
