@@ -563,7 +563,13 @@ main h2 {
 .whatsapp-float:hover img {
   transform: scale(1.1);
 }
-
+.logo-wsp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  z-index: 100;
+}
 /*------------------ PREGUNTAS FRECUENTES ------------------*/
 
 body {

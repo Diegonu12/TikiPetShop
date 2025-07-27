@@ -806,6 +806,14 @@ main h2 {
   transform: scale(1.1);
 }
 
+.logo-wsp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  z-index: 100;
+}
+
 /*------------------ PREGUNTAS FRECUENTES ------------------*/
 body {
   font-family: "Sour Gummy", sans-serif;
