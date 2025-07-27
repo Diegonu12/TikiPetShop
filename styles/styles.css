@@ -958,6 +958,11 @@ body {
   text-shadow: 1px 1px 2px #000;
 }
 
+.footer a {
+  color: #66ccff !important;
+  text-decoration: none;
+}
+
 /*-------------------------pagina servicios-------------------------------*/
 .servicios-main {
   padding: 40px 20px;
