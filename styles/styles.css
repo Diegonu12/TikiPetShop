@@ -845,7 +845,7 @@ body {
   margin-bottom: 30px;
   text-align: center;
   color: #2c1f0f;
-  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+  text-shadow: none !important;
 }
 
 .faq {
@@ -863,10 +863,10 @@ body {
   padding: 18px 20px;
   transition: all 0.3s ease;
   color: #2c1f0f;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   font-weight: 500;
   width: 100%;
   max-width: 600px;
+  text-shadow: none !important;
 }
 
 .faq details:hover {
