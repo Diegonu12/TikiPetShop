@@ -266,14 +266,31 @@ body {
     flex-direction: column;
     align-items: center;
   }
-
   .barra-lateral {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .filtros {
+    align-items: center;
+    text-align: center;
+  }
+
+  .filtro-precio {
     width: 100%;
-    max-width: 100%;
+    max-width: 300px;
   }
 
   .productos-container {
     grid-template-columns: 1fr;
+  }
+
+  .producto {
+    padding: 15px;
+    margin: 0 auto;
+    max-width: 320px;
   }
 
   .main-productos {
