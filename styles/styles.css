@@ -1452,4 +1452,131 @@ body.sobrenosotros {
   animation-timing-function: ease-out;
 }
 
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.boton-animado {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease-out forwards;
+}
+
+.delay-1 {
+  animation-delay: 0.4s;
+}
+
+.delay-2 {
+  animation-delay: 0.6s;
+}
+
+.delay-3 {
+  animation-delay: 0.8s;
+}
+
+.delay-4 {
+  animation-delay: 1s;
+}
+
+.delay-5 {
+  animation-delay: 1.2s;
+}
+
+/*-------Correccion diseño de categoria en index---------*/
+.seccion-categorias {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 20px;
+  max-width: 1000px;
+  margin: 60px auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.titulo-categorias {
+  font-size: 3rem;
+  margin-bottom: 40px;
+  color: #8b4513;
+  font-weight: 700;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.grupo-categoria {
+  margin-bottom: 40px;
+}
+
+.subtitulo-categorias {
+  font-size: 1.8rem;
+  color: #b04a19;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.botones-categorias {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.boton-categoria {
+  background: linear-gradient(145deg, #ffefcc, #fff8e1);
+  padding: 14px 30px;
+  border: none;
+  border-radius: 16px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #5c320d;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.boton-categoria:hover {
+  background-color: #ffcc00;
+  color: #4b2600;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 768px) {
+  .titulo-categorias {
+    font-size: 2.2rem;
+  }
+  .subtitulo-categorias {
+    font-size: 1.4rem;
+  }
+  .botones-categorias {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+.icono {
+  display: inline-block;
+  margin-right: 8px;
+  transition: transform 0.3s ease;
+}
+
+.boton-categoria:hover .icono {
+  animation: rebote 0.6s ease;
+}
+
+@keyframes rebote {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-6px);
+  }
+  60% {
+    transform: translateY(4px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
