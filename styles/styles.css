@@ -1369,6 +1369,7 @@ body.sobrenosotros {
   opacity: 0;
   transform: translateY(-50px);
   animation: logoDrop 1.2s ease-out forwards;
+  animation-delay: 0.3s;
 }
 
 @keyframes logoDrop {
@@ -1377,10 +1378,6 @@ body.sobrenosotros {
     transform: translateY(0);
   }
 }
-.logo-animado {
-  animation-delay: 0.3s;
-}
-
 .header-animado {
   opacity: 0;
   transform: translateY(-30px);
