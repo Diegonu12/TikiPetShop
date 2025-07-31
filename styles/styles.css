@@ -1578,5 +1578,164 @@ body.sobrenosotros {
     transform: translateY(0);
   }
 }
+/*-------------productos y servicios en index------------------*/
+.seccion-tarjetas {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin: 60px 0;
+  max-width: 2200px;
+}
+
+.tarjeta-enlace {
+  text-decoration: none;
+}
+
+.tarjeta {
+  background-color: #3b230b;
+  border-radius: 20px;
+  width: 340px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.tarjeta:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.tarjeta img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-top: 15px;
+}
+
+.titulo-tarjeta {
+  font-size: 1.5rem;
+  color: #ffcc00;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Icono animado */
+.icono-tarjeta {
+  display: inline-block;
+  font-size: 1.6rem;
+  transition: transform 0.4s ease;
+}
+
+.tarjeta:hover .icono-tarjeta {
+  animation: reboteIcono 0.6s ease;
+}
+
+@keyframes reboteIcono {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-6px);
+  }
+  60% {
+    transform: translateY(3px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+/*-------------CARRUSSEL-----------*/
+.carrusel {
+  overflow: hidden;
+  background-color: #fffdf6;
+  padding: 30px 0;
+}
+
+.slider {
+  height: 180px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.slide-track {
+  display: flex;
+  width: 1080px;
+  animation: scroll 18s linear infinite;
+}
+
+.slide {
+  width: 180px;
+  height: 100%;
+  margin: 0 20px;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.titulo-principal {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: aparecerTitulo 1s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes aparecerTitulo {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.hero-principal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 60px;
+  position: relative;
+  z-index: 100;
+  background-color: transparent;
+  width: 100%;
+}
+
+.logo-header {
+  width: 200px;
+  height: auto;
+}
+
+.header-animado {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: headerFadeIn 1s ease-out forwards;
+  animation-delay: 0.2s;
+}
+
+@keyframes headerFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
