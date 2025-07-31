@@ -40,13 +40,19 @@
 }
 
 .menu-icono {
-  display: flex;
-  flex-direction: column;
-  cursor: pointer;
   position: absolute;
   top: 20px;
   right: 20px;
-  z-index: 1001;
+  z-index: 1000;
+  cursor: pointer;
+ span {
+    display: block;
+    width: 30px;
+    height: 4px;
+    margin: 5px;
+    background-color: white;
+    transition: all 0.3s ease;
+  }
 }
 
 .menu-icono span {

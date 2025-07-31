@@ -509,7 +509,7 @@ main h2 {
     transform: translateY(0);
   }
 }
-/*-------------productos y servicios en index------------------*/
+/*------------------------productos y servicios en index------------------------*/
 .seccion-tarjetas {
   display: flex;
   justify-content: center;
@@ -586,8 +586,9 @@ main h2 {
 /*-------------CARRUSSEL-----------*/
 .carrusel {
   overflow: hidden;
-  background-color: #fffdf6;
-  padding: 30px 0;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
 }
 
 .slider {
@@ -695,15 +696,6 @@ body.index .logo-header {
   margin-bottom: 20px;
 }
 
-body.index .hero-texto {
-  color: white;
-  z-index: 2;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 20px 30px;
-  border-radius: 15px;
-  margin-top: 20px;
-}
-
 body.index .navegacion {
   z-index: 2;
   margin-top: 15px;
@@ -740,12 +732,12 @@ body.index .navegacion {
   font-weight: bold;
   margin-bottom: 10px;
   color: #ffcc00;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  text-shadow: 2px 2px 4px rgba(229, 224, 224, 0.4);
 }
 .hero-texto p {
   font-size: 1.2rem;
   color: #ffcc00;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  text-shadow: 1px 1px 3px rgba(208, 198, 198, 0.3);
 }
 
 /* --------------------- CARRUSEL SCROLL MANUAL ESTÉTICO --------------------- */
@@ -754,7 +746,7 @@ body.index .navegacion {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
-  background-color: #fff;
+  background-color: transparent;
 }
 .carrusel-scroll::-webkit-scrollbar {
   display: none;
@@ -1593,13 +1585,19 @@ body {
 }
 
 .menu-icono {
-  display: flex;
-  flex-direction: column;
-  cursor: pointer;
   position: absolute;
   top: 20px;
   right: 20px;
-  z-index: 1001;
+  z-index: 1000;
+  cursor: pointer;
+}
+.menu-icono span {
+  display: block;
+  width: 30px;
+  height: 4px;
+  margin: 5px;
+  background-color: white;
+  transition: all 0.3s ease;
 }
 
 .menu-icono span {
