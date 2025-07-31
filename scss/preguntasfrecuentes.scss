@@ -1,0 +1,81 @@
+/*------------------ PREGUNTAS FRECUENTES ------------------*/
+
+body {
+  font-family: 'Sour Gummy', sans-serif;
+  background-image: url('../assets/tiki1.png.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #2c1f0f;
+  margin: 0;
+  padding: 0;
+}
+
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  max-width: 100%;
+  padding: 40px 20px;
+  margin: 100px auto 50px auto;
+
+  background-color: rgba(255, 245, 225, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+}
+
+.faq-titulo {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #2c1f0f;
+  text-shadow: none !important;
+}
+
+.faq {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  gap: 10px;
+}
+
+.faq details {
+  margin-bottom: 15px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  padding: 18px 20px;
+  transition: all 0.3s ease;
+  color: #2c1f0f;
+  font-weight: 500;
+  width: 100%; 
+  max-width: 600px;
+  text-shadow: none !important;
+}
+
+.faq details:hover {
+  background-color: #f7f7f7;
+  transform: translateY(-2px);
+}
+
+.faq summary {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #1a1a1a;
+  list-style: none;
+  cursor: pointer;
+  padding-bottom: 5px;
+}
+
+.faq details[open] summary {
+  color: #1c130b;
+}
+
+.faq p {
+  margin-top: 10px;
+  font-size: 1rem;
+  line-height: 1.4;
+}

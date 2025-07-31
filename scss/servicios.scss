@@ -1,0 +1,227 @@
+/*-------------------------pagina servicios-------------------------------*/
+
+.servicios-main {
+  padding: 40px 20px;
+  background-color: #fdf7ee;
+}
+
+.mapa-servicios img {
+  display: block;
+  margin: 0 auto 40px;
+  max-width: 90%;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.15);
+}
+
+.tarjetas-servicios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.servicio-card {
+  background-color: #fde8c8;
+  @include bordes-redondeados(16px);
+  text-align: center;
+  padding: 25px 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.servicio-card:hover {
+  transform: translateY(-5px);
+}
+
+.servicio-card img {
+  max-width: 60px;
+  margin-bottom: 15px;
+}
+
+.servicio-card h3 {
+  font-family: 'Sour Gummy', sans-serif;
+  font-size: 1.4rem;
+  color: #A45A1C;
+  text-shadow: 1px 1px 2px #fff2d6;
+}
+
+.servicio-card p {
+  font-size: 0.95rem;
+  color: #222;
+}
+
+.servicio-card span {
+  font-size: 0.85rem;
+  color: #b76e1c;
+  display: block;
+  margin-top: 6px;
+  font-style: italic;
+}
+
+.extras-servicios {
+  background-color: #fde5c2;
+  padding: 40px 25px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.extras-servicios h2 {
+  font-family: 'Sour Gummy', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 25px;
+  color: #A45A1C;
+  text-shadow: 2px 2px #f0d4ac;
+}
+
+.extras-servicios ul {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: auto;
+  text-align: left;
+}
+
+.extras-servicios li {
+  margin-bottom: 12px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.mapa-servicios {
+  background-color: #6e4b33; 
+  padding-top: 80px;
+  padding-bottom: 60px;
+  width: 100vw;
+  margin: 0;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.mapa-servicios h2 {
+  font-family: 'Sour Gummy', sans-serif;
+  font-size: 2rem;
+  color: #ffc107;
+  text-align: center;
+  margin: 0 0 30px 0;  
+  
+  text-shadow: 1px 1px #000;
+}
+
+.mapa-servicios iframe {
+  display: block;
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 100%;
+  height: 500px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+.titulo-mapa {
+  font-family: 'Sour Gummy', sans-serif;
+  font-size: 2rem;
+  color: #ffc107;
+  text-align: center;
+  padding-top: 30px; 
+  margin-bottom: 30px;
+  text-shadow: 1px 1px #000;
+}
+
+.iframe-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+main {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+.mapa-servicios iframe {
+  display: block;
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 100%;
+  height: 500px;
+  border: none;
+  border-radius: 10px;
+}
+
+.hero::after {
+  content: "";
+  display: block;
+  height: 60px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #2d2d2d 100%);
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #2d2d2d; 
+}
+
+main {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.mapa-servicios {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+header {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+
+/*------------------------------------servicios carrusel--------------------------------*/
+.carrusel-container {
+  width: 100%;
+  overflow: hidden;
+  background-color: #f7f1e9;
+}
+
+.carrusel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+}
+
+.slide {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  max-height: 90vh;
+}
+
+
+@media (max-width: 768px) {
+  .slide img {
+    object-fit: contain;
+    max-height: 70vh;
+  }
+}

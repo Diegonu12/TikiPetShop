@@ -1,0 +1,111 @@
+/* --------------------------- FORMULARIO CONTACTO --------------------------- */
+.contacto {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.contacto h3 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.contacto input,
+.contacto textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.contacto button {
+  width: 100%;
+  padding: 12px;
+  background-color: #f77f00;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contacto button:hover {
+  background-color: #d66b00;
+}
+
+/* ------------------ CONTACTO ------------------ */
+.contacto-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 40px 20px;
+  background-image: url('../assets/perro-header-producto-HD.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.contacto-formulario {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.contacto-formulario h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #4a3a24;
+}
+
+.contacto-formulario label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #4a3a24;
+}
+
+.contacto-formulario input,
+.contacto-formulario textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.contacto-formulario button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #ff9900;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.contacto-formulario button:hover {
+  background-color: var(--color-hover);
+}
+
+.productos-destacados {
+  margin-bottom: 0;
+}
+
+.info-servicios {
+  margin-top: 0;
+  background: none; 
+  padding-top: 20px; 
+}

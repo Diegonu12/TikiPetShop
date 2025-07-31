@@ -1,3 +1,61 @@
+
+/*------------------------------------SobreNosotros Pagina-----------------------------------*/
+
+body.sobrenosotros {
+  background-color: #4e3524;
+  color: #fff3e6;
+}
+
+.historia-empresa {
+  padding: 60px 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.bloque-historia {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.bloque-historia img {
+  width: 280px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.texto-historia {
+  flex: 1;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.texto-historia h3 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  color: #ffd700;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .bloque-historia {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bloque-historia img {
+    width: 100%;
+    height: auto;
+  }
+}
+
 .sobre-nosotros-bloque {
   background-color: rgba(255, 255, 255, 0.7);
   padding: 20px;
@@ -6,7 +64,15 @@
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-// -------- Animación suave al hacer scroll --------// 
+.sobre-nosotros-bloque {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  border-radius: 15px;
+  margin: 20px 0;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ----------------------------- Animación suave al hacer scroll ------------------------------*/ 
 .fade-in {
   opacity: 0;
   transform: translateY(40px);
