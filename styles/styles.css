@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/*-------------------- VARIABLES --------------------*/
+/* -------------------- MIXINS --------------------*/
 /* ------------------------- RESET -------------------------- */
 @import url("https://fonts.googleapis.com/css2?family=Sour+Gummy&display=swap");
 * {
@@ -558,7 +560,7 @@ main h2 {
   gap: 10px;
 }
 
-/* Icono animado */
+/*---------------- Icono animado-------------------*/
 .icono-tarjeta {
   display: inline-block;
   font-size: 1.6rem;
