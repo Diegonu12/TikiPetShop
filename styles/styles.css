@@ -583,63 +583,6 @@ main h2 {
     transform: translateY(0);
   }
 }
-/*-------------CARRUSSEL-----------*/
-.carrusel {
-  overflow: hidden;
-  background-color: transparent;
-  margin: 0;
-  padding: 0;
-}
-
-.slider {
-  height: 180px;
-  position: relative;
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.slide-track {
-  display: flex;
-  width: 1080px;
-  animation: scroll 18s linear infinite;
-}
-
-.slide {
-  width: 180px;
-  height: 100%;
-  margin: 0 20px;
-}
-
-.slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-.titulo-principal {
-  opacity: 0;
-  transform: translateY(-30px);
-  animation: aparecerTitulo 1s ease-out forwards;
-  animation-delay: 0.3s;
-}
-
-@keyframes aparecerTitulo {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 .hero-principal {
   display: flex;
   justify-content: space-between;
@@ -741,33 +684,47 @@ body.index .navegacion {
 }
 
 /* --------------------- CARRUSEL SCROLL MANUAL ESTÉTICO --------------------- */
-.carrusel-scroll {
-  width: 100%;
+.seccion-carrusel {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+.carrusel {
+  display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
-  background-color: transparent;
+  gap: 20px;
+  padding: 20px;
+  cursor: grab;
 }
-.carrusel-scroll::-webkit-scrollbar {
+.carrusel::-webkit-scrollbar {
   display: none;
 }
-.carrusel-scroll .carrusel-scroll-contenedor {
-  display: flex;
-  width: 300%;
-  transition: transform 0.3s ease;
-}
-.carrusel-scroll .slide {
-  flex: 0 0 100vw;
+
+.slide {
+  flex: 0 0 auto;
+  width: 90vw;
+  max-width: 600px;
   scroll-snap-align: center;
+  border-radius: 16px;
+  overflow: hidden;
 }
-.carrusel-scroll .slide img {
+.slide img {
   width: 100%;
   height: auto;
   object-fit: cover;
   display: block;
-  border-radius: 10px;
 }
 
+@media (max-width: 768px) {
+  .slide {
+    width: 85vw;
+  }
+}
 body {
   font-family: "Sour Gummy", sans-serif;
   margin: 0;
@@ -1245,39 +1202,39 @@ header {
 }
 
 /*------------------------------------servicios carrusel--------------------------------*/
-.carrusel-container {
-  width: 100%;
-  overflow: hidden;
-  background-color: #f7f1e9;
-}
-
-.carrusel {
+.carrusel-servicios-puro {
   display: flex;
   overflow-x: auto;
+  gap: 16px;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
-  width: 100%;
+  padding: 10px;
+}
+.carrusel-servicios-puro::-webkit-scrollbar {
+  display: none;
 }
 
-.slide {
-  flex: 0 0 100%;
-  scroll-snap-align: start;
-  position: relative;
+.slide-servicio {
+  flex: 0 0 auto;
+  width: 80%;
+  max-width: 400px;
+  scroll-snap-align: center;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: white;
 }
-
-.slide img {
+.slide-servicio img {
   width: 100%;
   height: auto;
-  object-fit: cover;
   display: block;
-  max-height: 90vh;
+  object-fit: cover;
+  border-radius: 12px;
 }
 
 @media (max-width: 768px) {
-  .slide img {
-    object-fit: contain;
-    max-height: 70vh;
+  .slide-servicio {
+    width: 85%;
   }
 }
 /* --------------------------- FORMULARIO CONTACTO --------------------------- */
@@ -1665,7 +1622,7 @@ body {
     display: none;
   }
 }
-/* --------------------------- FOOTER --------------------------- */
+/* ---------------------------FOOTER--------------------------- */
 .footer {
   background-color: #333;
   color: white;
@@ -1771,7 +1728,7 @@ body {
   z-index: 100;
 }
 
-/* ------------------- RESPONSIVE ------------------- */
+/* ----------------------------------RESPONSIVE--------------------------------------- */
 @media (max-width: 768px) {
   .faq-container {
     margin: 60px auto 30px;
@@ -1787,7 +1744,7 @@ body {
     font-size: 0.95rem;
   }
 }
-/*-------------logos redes sociales------------*/
+/*-----------------------------------logos redes sociales----------------------------------*/
 .redes-sociales {
   list-style: none;
   padding: 0;
@@ -1815,7 +1772,7 @@ body {
   vertical-align: middle;
 }
 
-/* --------------------------- FOOTER RESPONSIVE --------------------------- */
+/* ------------------------------FOOTER RESPONSIVE------------------------- */
 @media (max-width: 600px) {
   .logosinfondo-footer {
     width: 120px !important;

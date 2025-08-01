@@ -585,61 +585,6 @@ main h2 {
   100% { transform: translateY(0); }
 }
 
-/*-------------CARRUSSEL-----------*/
-
-.carrusel {
-  overflow: hidden;
-  background-color: transparent;
-  margin: 0;
-  padding: 0;
-}
-
-.slider {
-  height: 180px;
-  position: relative;
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.slide-track {
-  display: flex;
-  width: calc(180px * 6); 
-  animation: scroll 18s linear infinite;
-}
-
-.slide {
-  width: 180px;
-  height: 100%;
-  margin: 0 20px;
-}
-
-.slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
-
-@keyframes scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
-
-.titulo-principal {
-  opacity: 0;
-  transform: translateY(-30px);
-  animation: aparecerTitulo 1s ease-out forwards;
-  animation-delay: 0.3s;
-}
-
-@keyframes aparecerTitulo {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
 .hero-principal {
   display: flex;
@@ -743,34 +688,46 @@ body.index .navegacion {
   }
 }
 /* --------------------- CARRUSEL SCROLL MANUAL ESTÉTICO --------------------- */
-.carrusel-scroll {
-  width: 100%;
+.seccion-carrusel {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+.carrusel {
+  display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
-  background-color: transparent;
+  gap: 20px;
+  padding: 20px;
+  cursor: grab;
 
   &::-webkit-scrollbar {
     display: none;
   }
+}
 
-  .carrusel-scroll-contenedor {
-    display: flex;
-    width: 300%; 
-    transition: transform 0.3s ease;
-  }
+.slide {
+  flex: 0 0 auto;
+  width: 90vw;
+  max-width: 600px;
+  scroll-snap-align: center;
+  border-radius: 16px;
+  overflow: hidden;
 
-  .slide {
-    flex: 0 0 100vw;
-    scroll-snap-align: center;
-
-    img {
-      width: 100%;
-      height: auto;
-      object-fit: cover;
-      display: block;
-      border-radius: 10px;
-    }
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
   }
 }
 
+@media (max-width: 768px) {
+  .slide {
+    width: 85vw;
+  }
+}

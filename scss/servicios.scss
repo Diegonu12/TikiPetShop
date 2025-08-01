@@ -189,39 +189,40 @@ header {
 
 
 /*------------------------------------servicios carrusel--------------------------------*/
-.carrusel-container {
-  width: 100%;
-  overflow: hidden;
-  background-color: #f7f1e9;
-}
-
-.carrusel {
+.carrusel-servicios-puro {
   display: flex;
   overflow-x: auto;
+  gap: 16px;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
-  width: 100%;
+  padding: 10px;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
-.slide {
-  flex: 0 0 100%;
-  scroll-snap-align: start;
-  position: relative;
-}
+.slide-servicio {
+  flex: 0 0 auto;
+  width: 80%;
+  max-width: 400px;
+  scroll-snap-align: center;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: white;
 
-.slide img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  display: block;
-  max-height: 90vh;
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 12px;
+  }
 }
-
 
 @media (max-width: 768px) {
-  .slide img {
-    object-fit: contain;
-    max-height: 70vh;
+  .slide-servicio {
+    width: 85%;
   }
 }

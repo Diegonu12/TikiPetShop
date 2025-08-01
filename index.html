@@ -47,12 +47,17 @@
   </header>
 <!-----------------------------------SECCION DE CARRUSEL------------------------------>
  <main>
-<section class="carrusel-scroll">
-  <div class="carrusel">
-  <div class="slide"><img src="assets/banner1.jpg" alt=""></div>
-  <div class="slide"><img src="assets/bunner2.jpg" alt=""></div>
-  <div class="slide"><img src="assets/bunner3.jpg" alt=""></div>
-</div>
+
+<section style="overflow-x: auto; display: flex; gap: 20px; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; cursor: grab; padding: 20px;">
+  <div style="flex: 0 0 auto; width: 90vw; max-width: 600px; scroll-snap-align: center; border-radius: 16px; overflow: hidden;">
+    <img src="assets/banner1.jpg" style="width: 100%; height: auto;" />
+  </div>
+  <div style="flex: 0 0 auto; width: 90vw; max-width: 600px; scroll-snap-align: center; border-radius: 16px; overflow: hidden;">
+    <img src="assets/bunner2.jpg" style="width: 100%; height: auto;" />
+  </div>
+  <div style="flex: 0 0 auto; width: 90vw; max-width: 600px; scroll-snap-align: center; border-radius: 16px; overflow: hidden;">
+    <img src="assets/bunner3.jpg" style="width: 100%; height: auto;" />
+  </div>
 </section>
 
 <!-------------------------------------SECCION DE PRODUCTOS/SERVICIOS-------------------------------------------->
